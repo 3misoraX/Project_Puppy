@@ -6,12 +6,14 @@ using UnityEngine.InputSystem.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private void OnTriggerStay(Collider other)
+    private IInteractable currentInteractable;
+    
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.TryGetComponent(out IInteractable interactable))
         {
-            interactable.ShowPrompt(true);
+            currentInteractable = interactable;
+            currentInteractable.ShowPrompt(true);
         }
     }
 
@@ -20,6 +22,12 @@ public class PlayerInteraction : MonoBehaviour
         if (other.TryGetComponent(out IInteractable interactable))
         {
             interactable.ShowPrompt(false);
+            currentInteractable = null;
         }
+    }
+    
+    public void OnInteract()
+    {
+        currentInteractable?.Interact();
     }
 }

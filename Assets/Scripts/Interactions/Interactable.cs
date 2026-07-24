@@ -12,12 +12,14 @@ public class Interactable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log("Interact");
+        //Debug.Log("Interact");
+        GetComponent<Renderer>().material.color = Color.green;
     }
 
     public void ShowPrompt(bool show)
     {
-        Debug.Log("Can Interact");
+        //Debug.Log("Can Interact");
         prompt.SetActive(show);
+        
     }
 }

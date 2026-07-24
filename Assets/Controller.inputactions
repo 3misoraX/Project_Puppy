@@ -34,10 +34,19 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Camera",
+                    "name": "CameraX",
                     "type": "Value",
                     "id": "7fb2792c-8e26-4130-b74f-e08d9452090c",
-                    "expectedControlType": "Delta",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CameraY",
+                    "type": "Value",
+                    "id": "19f0d8fb-3e88-457a-879e-37bddc3bcb43",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -122,59 +131,26 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "4eccf263-2a13-4bc4-aa89-3435290e8d65",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "33613978-deb5-4e6a-bbc2-655fe77968cb",
+                    "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Camera",
-                    "isComposite": true,
+                    "groups": ";Keyboard&Mouse",
+                    "action": "CameraX",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "9f573931-8087-48d9-8f79-51176233a1fe",
-                    "path": "<Mouse>/delta/up",
+                    "name": "",
+                    "id": "248a6880-da63-4d32-8690-0fe2c28f03a2",
+                    "path": "<Mouse>/delta/y",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Camera",
+                    "action": "CameraY",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "f4ba9123-57d9-44a4-b731-c5f16c10a14f",
-                    "path": "<Mouse>/delta/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "4f873fca-59ff-4c38-b42b-c59684d60dde",
-                    "path": "<Mouse>/delta/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "01efe0ab-74da-4b1f-8ca1-b6de7855ade9",
-                    "path": "<Mouse>/delta/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         },

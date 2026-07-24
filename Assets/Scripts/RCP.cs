@@ -18,9 +18,10 @@ public class RCP : MonoBehaviour
     public int Max_good = 10;
     public int good_count = 0;
     public Image feel_bar;
-    void Start()
+    public GameObject game_Panel;
+    void OnEnable()
     {
-        
+        good_count = 0;
     }
 
     // Update is called once per frame
@@ -61,6 +62,10 @@ public class RCP : MonoBehaviour
             Debug.Log("good");
             good_count++;
             feel_bar.fillAmount = (float)good_count / (float)Max_good;
+            if (good_count == Max_good)
+            {
+                game_Panel.SetActive(false);
+            }
         }
         else
         {

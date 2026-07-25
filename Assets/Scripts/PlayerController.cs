@@ -21,13 +21,19 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float fallSpeed;
     private float verticalSpeed;
-    private bool isGrounded = true;
+    public bool isGrounded = true;
     [Header("Detective Mode")]
     public bool detectiveMode = false;
     public float duration;
     public GameObject detectiveCamera;
     public List<GameObject> objectiveList;
     public float cooldown;
+    [Header("SFX")]
+    private AudioSource source;
+    public AudioClip walkFx;
+    public AudioSource SFXSource;
+    public AudioClip activeFx;
+    private float delay = 0f;
     
 
     private void Awake()
@@ -35,11 +41,14 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<CharacterController>();
         ChangeSensibility(cameraObject);
         ChangeSensibility(detectiveCamera);
+        source = GetComponent<AudioSource>();
+        source.clip = walkFx;
     }
 
     private void Start()
     {
         objectiveList.AddRange(GameObject.FindGameObjectsWithTag("Objectives"));
+        delay = 0;
     }
 
     void Update()
@@ -49,6 +58,7 @@ public class PlayerController : MonoBehaviour
         HandleGravity();
         //Function that handles movement
         Movement();
+        WalkingSFX();
         //Rotates the player forward towards the camera forward ignoring the y axis
         transform.forward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z);
 
@@ -96,6 +106,22 @@ public class PlayerController : MonoBehaviour
         mover.y = verticalSpeed;
         player.Move(mover * Time.deltaTime);
     }
+    void WalkingSFX()
+    {
+        if(moveInput != Vector2.zero && isGrounded)
+        {
+            if(!source.isPlaying)
+            {
+                source.PlayDelayed(delay);
+                if (detectiveMode) delay = 0.3f;
+            }
+        }
+        else
+        {
+            source.Stop();
+            delay = 0f;
+        }
+    }
 
     //to manage gravity and stuff
     void HandleGravity()
@@ -114,6 +140,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             verticalSpeed = jumpForce;
+            source.Stop();
         }
     }
 
@@ -136,6 +163,8 @@ public class PlayerController : MonoBehaviour
     {
         if(!detectiveMode && cooldown <= 0)
         {
+            SFXSource.clip = activeFx;
+            SFXSource.Play();
             StartCoroutine(ActivateDetectiveMode());
         }
     }

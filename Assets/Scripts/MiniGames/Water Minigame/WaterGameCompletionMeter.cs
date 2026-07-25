@@ -8,6 +8,7 @@ public class WaterGameCompletionMeter : MonoBehaviour
     public Image progressBar;
     [Range(0f,1f)]
     public float completion;
+    public MinigameInteraction minigameInteraction;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class WaterGameCompletionMeter : MonoBehaviour
             // Poner aqui la lógica de cuando termine el juego
             // regresar al jugador, etc.
             Debug.Log("complete");
+            minigameInteraction.EndIteraction();
         }
     }
 }

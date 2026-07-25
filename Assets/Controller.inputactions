@@ -34,22 +34,22 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "CameraX",
+                    "name": "Camera",
                     "type": "Value",
                     "id": "7fb2792c-8e26-4130-b74f-e08d9452090c",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "CameraY",
-                    "type": "Value",
-                    "id": "19f0d8fb-3e88-457a-879e-37bddc3bcb43",
+                    "name": "DetectiveMode",
+                    "type": "Button",
+                    "id": "9b58b37e-c86b-425b-82c3-decc2f0b3c0f",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -133,22 +133,22 @@
                 {
                     "name": "",
                     "id": "33613978-deb5-4e6a-bbc2-655fe77968cb",
-                    "path": "<Mouse>/delta/x",
+                    "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "CameraX",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "248a6880-da63-4d32-8690-0fe2c28f03a2",
-                    "path": "<Mouse>/delta/y",
+                    "id": "b1e4429c-90cc-448a-bf0b-544cb36b884a",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "CameraY",
+                    "action": "DetectiveMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

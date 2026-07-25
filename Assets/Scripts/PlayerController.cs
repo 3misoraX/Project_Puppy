@@ -10,10 +10,9 @@ public class PlayerController : MonoBehaviour
     private CharacterController player;
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
-    private GameObject cameraObject;
+    public GameObject cameraObject;
     public int mouseSensibility = 10;
     public bool invertY = false;
-    private Quaternion lastCamRotation;
     [Header("Movement Options")]
     [SerializeField] private Vector2 moveInput;
     public float speed;
@@ -28,16 +27,14 @@ public class PlayerController : MonoBehaviour
     public float duration;
     public GameObject detectiveCamera;
     public List<GameObject> objectiveList;
-    private bool firstContact = false;
+    public float cooldown;
     
 
     private void Awake()
     {
         player = GetComponent<CharacterController>();
-        cameraObject = GameObject.FindWithTag("Cinemachine");
         ChangeSensibility(cameraObject);
         ChangeSensibility(detectiveCamera);
-        firstContact = false;
     }
 
     private void Start()
@@ -54,6 +51,11 @@ public class PlayerController : MonoBehaviour
         Movement();
         //Rotates the player forward towards the camera forward ignoring the y axis
         transform.forward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z);
+
+        if(cooldown > 0)
+        {
+            cooldown -= Time.deltaTime;
+        }
     }
 
     //This function will change the sensibility in the mouse
@@ -120,19 +122,19 @@ public class PlayerController : MonoBehaviour
     {
         if (detectiveMode)
         {
-            cameraObject.GetComponent<CinemachineCamera>().enabled = false;
             detectiveCamera.GetComponent<CinemachineCamera>().enabled = true;
+            cameraObject.GetComponent<CinemachineCamera>().enabled = false;
         }
         else
         {
-            detectiveCamera.GetComponent<CinemachineCamera>().enabled = false;
             cameraObject.GetComponent<CinemachineCamera>().enabled = true;
+            detectiveCamera.GetComponent<CinemachineCamera>().enabled = false;
         }
     }
 
     void OnDetectiveMode(InputValue value)
     {
-        if(!detectiveMode)
+        if(!detectiveMode && cooldown <= 0)
         {
             StartCoroutine(ActivateDetectiveMode());
         }
@@ -143,8 +145,8 @@ public class PlayerController : MonoBehaviour
         Light indicator;
         detectiveMode = true;
         CameraChange();
-        speed /= 2;
-        GameObject.Find("Directional Light").transform.Rotate(new Vector3(230, 0, 0));
+        speed /= 4;
+        GameObject.Find("Directional Light").GetComponent<Light>().intensity = 0;
         foreach(GameObject person in objectiveList)
         {
             person.TryGetComponent<Light>(out indicator);
@@ -156,7 +158,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
-        GameObject.Find("Directional Light").transform.Rotate(new Vector3(-230, 0, 0));
+        GameObject.Find("Directional Light").GetComponent<Light>().intensity = 1;
         foreach (GameObject person in objectiveList)
         {
             person.TryGetComponent<Light>(out indicator);
@@ -167,7 +169,8 @@ public class PlayerController : MonoBehaviour
         }
         detectiveMode = false;
         CameraChange();
-        speed *= 2;
+        speed *= 4;
+        cooldown = duration;
     }
 
     //Aparecen los indicadores (fuentes de luz)

@@ -57,9 +57,8 @@ public class LeafManager : MonoBehaviour
     {
         hojas_Activas.Remove(current);
         Debug.Log(hojas_Activas.Count);
-        if(hojas_Activas.Count == 0)
+        if(hojas_Activas.Count == 1)
         {
-            gameObject.SetActive(false);
             minigameInteraction.EndIteraction();
         }
         else

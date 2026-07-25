@@ -13,19 +13,15 @@ public class SpawnRescue : MonoBehaviour
         Gizmos.DrawWireSphere(Vector3.zero,maxRadius);
     }
 
-    void Update()
+    void Awake()
     {
-        if (Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            GenerateSpawns();
-        }
+        GenerateSpawns();
     }
 
     [Header("Spawn Settings")]
     public float minRadius;
     public float maxRadius;
     public int totalSpawns;
-    public GameObject spawnPrefab;
     List<GameObject> spawned = new List<GameObject>();
 
 
@@ -130,7 +126,7 @@ public class SpawnRescue : MonoBehaviour
         spawn = null;
         Vector3 startPosition = new Vector3(startPoint.x, checkStartY, startPoint.y);
         Ray ray = new Ray(startPosition,Vector3.down);
-        Physics.SphereCast(ray, 1, out RaycastHit hitInfo, checkMaxDistance);
+        Physics.Raycast(ray, out RaycastHit hitInfo, checkMaxDistance);
         
             //No collition
             if(hitInfo.collider == null){return false;}

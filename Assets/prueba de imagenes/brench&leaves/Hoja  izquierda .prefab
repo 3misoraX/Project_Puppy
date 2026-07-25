@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 846a27a08aadd544c9b5a7d717bff9e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bf9f6851aef3734392fa1c902362525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -89,10 +89,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Leaf
   playerInput: {x: 0, y: 0}
-  up: {fileID: -5816440594008255859, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
-  down: {fileID: -3027193011720808078, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
-  left: {fileID: 6903046469186919606, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
-  right: {fileID: -1366831583616026957, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
+  up: {fileID: -2894430574504456630, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
+  down: {fileID: 4728994338217059263, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
+  left: {fileID: 3199967472059159382, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
+  right: {fileID: -5954893843520788961, guid: 0ad1037b9e377e94686d92b667fcff39, type: 3}
   direccion: 2
   speed: 500
   turno: 0

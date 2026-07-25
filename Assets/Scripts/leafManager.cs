@@ -10,8 +10,9 @@ public class LeafManager : MonoBehaviour
     public Leaf hojaPrefab;
     public Transform leafSpawn;
     public TextMeshProUGUI indicacionPantalla;
+    public MinigameInteraction minigameInteraction;
 
-    [Header("Configuración")]
+    [Header("Configuraciï¿½n")]
     public int cantidadHojas = 10;
     public float separacion = 10f;
 
@@ -55,9 +56,11 @@ public class LeafManager : MonoBehaviour
     public void SiguienteHoja(Leaf current)
     {
         hojas_Activas.Remove(current);
+        Debug.Log(hojas_Activas.Count);
         if(hojas_Activas.Count == 0)
         {
             gameObject.SetActive(false);
+            minigameInteraction.EndIteraction();
         }
         else
         {

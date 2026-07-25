@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &31793812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -257,6 +257,7 @@ MonoBehaviour:
   hojaPrefab: {fileID: 0}
   leafSpawn: {fileID: 0}
   indicacionPantalla: {fileID: 1078570163}
+  minigameInteraction: {fileID: 0}
   cantidadHojas: 10
   separacion: 10
   hojas: []
@@ -494,6 +495,7 @@ MonoBehaviour:
   good_count: 0
   feel_bar: {fileID: 1709315751}
   game_Panel: {fileID: 31793811}
+  minigameInteraction: {fileID: 0}
 --- !u!114 &821554651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e03a53af5799112428a7271d70af127e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c90845c83724d264b91724845ddd109a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -823,8 +825,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1046641070}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1006450715
@@ -1015,7 +1016,7 @@ RectTransform:
   m_Children:
   - {fileID: 31793812}
   - {fileID: 1064699948}
-  m_Father: {fileID: 879467110}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1034,12 +1035,12 @@ GameObject:
   - component: {fileID: 1064699950}
   - component: {fileID: 1064699949}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Sticks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1064699948
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1331,7 +1332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc1f8b0ca490f0e4db1cf00bd986f200, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e3130267ee5c67428772ba388278e86, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1408,7 +1409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 173083a9f44485545af49fcb86d7856c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7321211dd55634e40bcb45c285ea1ab5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1535,7 +1536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7eb0fe4908fb9942aab13f110f0118f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c90845c83724d264b91724845ddd109a, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1610,7 +1611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7eb0fe4908fb9942aab13f110f0118f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c90845c83724d264b91724845ddd109a, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1755,6 +1756,7 @@ MonoBehaviour:
   hojaPrefab: {fileID: 760140066}
   leafSpawn: {fileID: 0}
   indicacionPantalla: {fileID: 1078570163}
+  minigameInteraction: {fileID: 0}
   cantidadHojas: 10
   separacion: 10
   hojas:
@@ -1835,7 +1837,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7eb0fe4908fb9942aab13f110f0118f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9de3b6e66e464b4987f18dd659fac27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2422,3 +2424,4 @@ SceneRoots:
   - {fileID: 1006450718}
   - {fileID: 879467110}
   - {fileID: 405562587}
+  - {fileID: 1046641070}

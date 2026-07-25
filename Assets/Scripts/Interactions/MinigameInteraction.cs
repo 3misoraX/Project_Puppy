@@ -12,6 +12,7 @@ public class MinigameInteraction : MonoBehaviour, IInteractable
     void Awake()
     {
         minigame.SetActive(false);
+        ShowPrompt(false);
     }
     public void Interact()
     {

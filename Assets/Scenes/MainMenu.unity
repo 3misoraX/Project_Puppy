@@ -2026,6 +2026,7 @@ GameObject:
   - component: {fileID: 609476513}
   - component: {fileID: 609476512}
   - component: {fileID: 609476511}
+  - component: {fileID: 609476514}
   m_Layer: 5
   m_Name: btn_credits
   m_TagString: Untagged
@@ -2079,7 +2080,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 5
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -2147,6 +2148,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609476509}
   m_CullTransparentMesh: 1
+--- !u!114 &609476514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609476509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 1278925396}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1001 &614466202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3631,6 +3647,7 @@ GameObject:
   - component: {fileID: 1001491664}
   - component: {fileID: 1001491663}
   - component: {fileID: 1001491662}
+  - component: {fileID: 1001491665}
   m_Layer: 5
   m_Name: btn_back
   m_TagString: Untagged
@@ -3752,6 +3769,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001491660}
   m_CullTransparentMesh: 1
+--- !u!114 &1001491665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001491660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 720664115}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1001 &1002708829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4536,6 +4568,7 @@ GameObject:
   - component: {fileID: 1195617839}
   - component: {fileID: 1195617838}
   - component: {fileID: 1195617837}
+  - component: {fileID: 1195617840}
   m_Layer: 5
   m_Name: btn_back
   m_TagString: Untagged
@@ -4657,6 +4690,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195617835}
   m_CullTransparentMesh: 1
+--- !u!114 &1195617840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195617835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 1571886983}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1001 &1207711396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5677,6 +5725,7 @@ GameObject:
   - component: {fileID: 1512464612}
   - component: {fileID: 1512464611}
   - component: {fileID: 1512464610}
+  - component: {fileID: 1512464613}
   m_Layer: 5
   m_Name: btn_play
   m_TagString: Untagged
@@ -5786,6 +5835,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512464608}
   m_CullTransparentMesh: 1
+--- !u!114 &1512464613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512464608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 1356098264}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1 &1513546441
 GameObject:
   m_ObjectHideFlags: 0
@@ -6549,6 +6613,7 @@ GameObject:
   - component: {fileID: 1680871929}
   - component: {fileID: 1680871928}
   - component: {fileID: 1680871927}
+  - component: {fileID: 1680871930}
   m_Layer: 5
   m_Name: btn_credits
   m_TagString: Untagged
@@ -6670,6 +6735,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680871925}
   m_CullTransparentMesh: 1
+--- !u!114 &1680871930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680871925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 1014992714}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1 &1723527245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7841,6 +7921,7 @@ GameObject:
   - component: {fileID: 2092878024}
   - component: {fileID: 2092878023}
   - component: {fileID: 2092878022}
+  - component: {fileID: 2092878025}
   m_Layer: 5
   m_Name: btn_exit
   m_TagString: Untagged
@@ -7950,6 +8031,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092878020}
   m_CullTransparentMesh: 1
+--- !u!114 &2092878025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092878020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1f79596306b3247a74890aee95a8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorText
+  text: {fileID: 1513546443}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
+  hoverColor: {r: 0.07943218, g: 0.77300775, b: 0.8018868, a: 1}
 --- !u!1 &2102799977
 GameObject:
   m_ObjectHideFlags: 0
@@ -8109,6 +8205,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c34b7805511c0408f083c01cea2c7c, type: 3}
+--- !u!1001 &4877719291712564303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 134447159711696187, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 67.88541
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 72.88223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.72749
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162860530880822933, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe4ba75e2cb6cae4c85b676305c8dc3e, type: 3}
 --- !u!1001 &8535771674446078740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8170,6 +8323,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 4877719291712564303}
   - {fileID: 794695340}
   - {fileID: 2025146222}
   - {fileID: 1870465816}

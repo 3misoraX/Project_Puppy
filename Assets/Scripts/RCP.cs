@@ -58,6 +58,7 @@ public class RCP : MonoBehaviour
             }
     }
 
+    public MinigameInteraction minigameInteraction;
     void OnJump(InputValue value)
     {
         if (good == true)
@@ -68,6 +69,7 @@ public class RCP : MonoBehaviour
             if (good_count == Max_good)
             {
                 game_Panel.SetActive(false);
+                minigameInteraction.EndIteraction();
             }
         }
         else

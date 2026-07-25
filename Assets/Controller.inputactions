@@ -188,7 +188,7 @@
                 {
                     "name": "LeafUp",
                     "type": "Button",
-                    "id": "2828cddf-3eb1-4515-9eff-0bfd1c78b851",
+                    "id": "2dbf5322-8e48-49d7-ab1f-fd392caca197",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -197,7 +197,7 @@
                 {
                     "name": "LeafDown",
                     "type": "Button",
-                    "id": "b9f07bcb-729f-4aa7-b444-b8888b6ff2b8",
+                    "id": "b03f3248-df78-4e73-a49a-24658384f182",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -206,7 +206,7 @@
                 {
                     "name": "LeafLeft",
                     "type": "Button",
-                    "id": "1429a12c-881a-4269-ad4a-ecd0cffacb69",
+                    "id": "fc792b49-25a8-4732-a1f2-d019739bc17c",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -215,7 +215,7 @@
                 {
                     "name": "LeafRight",
                     "type": "Button",
-                    "id": "53a0458d-88db-4f05-94c5-49cf9c6d3421",
+                    "id": "d4b5f11e-0c47-41ea-80c4-6a0ceea141cc",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -324,7 +324,7 @@
                 },
                 {
                     "name": "",
-                    "id": "4c22b139-d26c-476d-8c0f-5e6892f62974",
+                    "id": "a63844d4-a73c-442b-b8ef-e637bfb1bea9",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -335,7 +335,7 @@
                 },
                 {
                     "name": "",
-                    "id": "b9ae85a1-f980-4ff7-a4f2-36b8975f7b7a",
+                    "id": "65b1679c-120d-43c1-a074-c9a42ca95643",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -346,7 +346,7 @@
                 },
                 {
                     "name": "",
-                    "id": "93452ff9-133d-4fe6-8cee-99d6c4befba0",
+                    "id": "aacce9b8-66e6-44bd-a2a6-cfbe6c65a876",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -357,7 +357,7 @@
                 },
                 {
                     "name": "",
-                    "id": "1e01097d-5414-4e5e-9674-ea31cbf785cb",
+                    "id": "cc48944d-34ad-44f2-aded-699cfc528683",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",

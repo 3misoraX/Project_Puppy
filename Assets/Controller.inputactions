@@ -184,6 +184,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LeafUp",
+                    "type": "Button",
+                    "id": "2dbf5322-8e48-49d7-ab1f-fd392caca197",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeafDown",
+                    "type": "Button",
+                    "id": "b03f3248-df78-4e73-a49a-24658384f182",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeafLeft",
+                    "type": "Button",
+                    "id": "fc792b49-25a8-4732-a1f2-d019739bc17c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeafRight",
+                    "type": "Button",
+                    "id": "d4b5f11e-0c47-41ea-80c4-6a0ceea141cc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -283,6 +319,50 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "RhythmMinigame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a63844d4-a73c-442b-b8ef-e637bfb1bea9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeafUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65b1679c-120d-43c1-a074-c9a42ca95643",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeafDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aacce9b8-66e6-44bd-a2a6-cfbe6c65a876",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeafLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc48944d-34ad-44f2-aded-699cfc528683",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeafRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

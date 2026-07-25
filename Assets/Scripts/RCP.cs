@@ -14,6 +14,7 @@ public class RCP : MonoBehaviour
     public float epsilon = 0.1f;
     public TMP_Text texto;
     public Image heart;
+    public Image heart_ritmo;
     private bool good;
     public int Max_good = 10;
     public int good_count = 0;
@@ -38,11 +39,13 @@ public class RCP : MonoBehaviour
         }
         else if (beat >= 0 && beat <= epsilon)
         {
-            heart.color = Color.red;
+            heart_ritmo.enabled = true;
+            heart.enabled = false;
         }
         else
         {
-            heart.color = Color.black;
+            heart.enabled = true;
+            heart_ritmo.enabled = false;
             good = false;
         }
 
